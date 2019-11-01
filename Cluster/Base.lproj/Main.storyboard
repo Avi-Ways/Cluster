@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Delegate-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cluster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhI-dr-GUy" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="XQz-TE-OS4"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fhI-dr-GUy" secondAttribute="bottom" id="6NL-67-URc"/>
+                            <constraint firstItem="fhI-dr-GUy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="X7C-jn-oOL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fhI-dr-GUy" secondAttribute="trailing" id="Zfe-Cy-P64"/>
+                            <constraint firstItem="fhI-dr-GUy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="enl-qd-604"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="fhI-dr-GUy" id="PM2-fL-2jN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
+        </scene>
+        <!--Terms & Conditions-->
+        <scene sceneID="En1-Iv-mAP">
+            <objects>
+                <viewController id="7Qm-Xj-f2T" customClass="WaysTermsViewController" customModule="WaysApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qwY-Kc-RUq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BMv-Ke-13V">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FAQ8003" rowHeight="3750" id="lJk-VI-x1V">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="3750"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lJk-VI-x1V" id="Iux-tm-zHh">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="3750"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hAe-se-gZF">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="3750"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" text="3. Your Use of the Services" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fwy-gZ-QWr">
+                                                            <rect key="frame" x="18" y="1" width="284" height="19.5"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                            <color key="textColor" name="appSelected"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Accounts" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4b-L7-8wY">
+                                                            <rect key="frame" x="18" y="36.5" width="284" height="19.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z15-cM-oN1">
+                                                            <rect key="frame" x="18" y="64" width="284" height="554"/>
+                                                            <mutableString key="text">In order to use most aspects of the Services, you must register for and maintain an active personal user Services account (“Account”). You must be at least 18 years of age, or the age of legal majority, to obtain an Account. Account registration requires you to submit to Pepal certain personal information, such as your mobile phone number, your name and address, as well as at least one valid payment method (either a credit card or accepted payment partner). You agree to maintain accurate, complete, and up-to-date information in your Account. Your failure to maintain accurate, complete, and up-to-date Account information, including having an invalid or expired payment method on file, may result in your inability to access and use the Services or Pepal’s termination of these Terms with you. You are responsible for all activity that occurs under your Account, and you agree to maintain the security and secrecy of your Account at all times. Unless otherwise permitted by Pepal in writing, you may only possess one Account.</mutableString>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Requirements and Conduct" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3r3-5W-PFt">
+                                                            <rect key="frame" x="18" y="626" width="284" height="19.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Pm-gx-cWl">
+                                                            <rect key="frame" x="18" y="653.5" width="284" height="458.5"/>
+                                                            <mutableString key="text">The Service is not available for use by persons under the age of 18. You may not authorize third parties to use your Account, and you may not allow persons under the age of 18 to buy toll tickets from Toll Operators unless they are accompanied by you. You may not assign or otherwise transfer your Account to any other person or entity. You agree to comply with all applicable laws when using the Services, and you may only use the Services for lawful purposes (e.g., no transport of unlawful or hazardous materials). You will not, in your use of the Services, cause nuisance, annoyance, inconvenience, or property damage, whether to the Toll Operators or any other party. In certain instances you may be asked to provide proof of ticket to access or use the Services, and you agree that you may be denied access to or use of the Services if you refuse to provide proof of ticket.</mutableString>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Messaging" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXf-Px-XWP">
+                                                            <rect key="frame" x="18" y="1120" width="284" height="19.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mm-bT-qTc">
+                                                            <rect key="frame" x="18" y="1147.5" width="284" height="229.5"/>
+                                                            <string key="text">By creating an Account, you agree that the Services may send you text (SMS) messages as part of the normal business operation of your use of the Services. You may opt-out of receiving text (SMS) messages from Pepal at any time by following the directions found at htttp://waysapp.in/SMS-unsubscribe. You acknowledge that opting out of receiving text (SMS) messages may impact your use of the Services.</string>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promotional Codes" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWE-JH-OOB">
+                                                            <rect key="frame" x="18" y="1385" width="284" height="19.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="i." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0e-Dg-MMo">
+                                                            <rect key="frame" x="18" y="1573.5" width="8.5" height="19.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="must be used for the intended audience and purpose, and in a lawful manner;" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7W-Oc-IbH">
+                                                            <rect key="frame" x="34.5" y="1573.5" width="267.5" height="57.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAI-Wg-1Cx">
+                                                            <rect key="frame" x="34.5" y="1639" width="267.5" height="115"/>
+                                                            <string key="text">may not be duplicated, sold or transferred in any manner, or made available to the general public (whether posted to a public form or otherwise), unless expressly permitted by Pepal;</string>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="ii." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WCq-ES-mtn">
+                                                            <rect key="frame" x="18" y="1639" width="12" height="19.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="iii." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nqd-qv-6jg">
+                                                            <rect key="frame" x="18" y="1762" width="15.5" height="19.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="may be disabled by Pepal at any time for any reason without liability to Pepal;" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7z-xt-1ox">
+                                                            <rect key="frame" x="34.5" y="1762" width="267.5" height="57.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="iv." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wfb-eG-PWb">
+                                                            <rect key="frame" x="18" y="1827.5" width="15.5" height="19.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="may only be used pursuant to the specific terms that Pepal establishes for such Promo Code;" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5b-5x-yl3">
+                                                            <rect key="frame" x="34.5" y="1827.5" width="267.5" height="57.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="are not valid for cash; and" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BB4-ZI-vDz">
+                                                            <rect key="frame" x="34.5" y="1893" width="267.5" height="19.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="v." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXv-Sm-f9S">
+                                                            <rect key="frame" x="18" y="1893" width="12" height="19.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="vi." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBK-lv-0oU">
+                                                            <rect key="frame" x="18" y="1920.5" width="16.5" height="19.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="may expire prior to your use." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Te-fE-Lai">
+                                                            <rect key="frame" x="34.5" y="1920.5" width="267.5" height="19.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDT-YB-P4s">
+                                                            <rect key="frame" x="18" y="1948" width="284" height="191"/>
+                                                            <string key="text">Pepal reserves the right to withhold or deduct credits or other features or benefits obtained through the use of Promo Codes by you or any other user in the event that Pepal determines or believes that the use or redemption of the Promo Code was in error, fraudulent, illegal, or in violation of the applicable Promo Code terms or these Terms.</string>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Provided Content" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXP-lp-4ba">
+                                                            <rect key="frame" x="18" y="2147" width="284" height="19.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyG-1S-rCb">
+                                                            <rect key="frame" x="18" y="2174.5" width="284" height="535"/>
+                                                            <mutableString key="text">Pepal may, in Pepal’s sole discretion, permit you from time to time to submit, upload, publish or otherwise make available to Pepal through the Services textual, audio, and/or visual content and information, including commentary and feedback related to the Services, initiation of support requests, and submission of entries for competitions and promotions (“User Content”). Any User Content provided by you remains your property. However, by providing User Content to Pepal, you grant Pepal a worldwide, perpetual, irrevocable, transferrable, royalty-free license, with the right to sublicense, to use, copy, modify, create derivative works of, distribute, publicly display, publicly perform, and otherwise exploit in any manner such User Content in all formats and distribution channels now known or hereafter devised (including in connection with the Services and Pepal’s business and on third-party sites and services), without further notice to or consent from you, and without the requirement of payment to you or any other person or entity.</mutableString>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You represent and warrant that:" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ef-92-3M6">
+                                                            <rect key="frame" x="18" y="2717.5" width="284" height="19.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCf-2z-naT">
+                                                            <rect key="frame" x="34.5" y="2745" width="267.5" height="115"/>
+                                                            <string key="text">you either are the sole and exclusive owner of all User Content or you have all rights, licenses, consents and releases necessary to grant Pepal the license to the User Content as set forth above; and</string>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWC-V5-Qrk">
+                                                            <rect key="frame" x="18" y="1412.5" width="284" height="153"/>
+                                                            <string key="text">Pepal may, in Pepal’s sole discretion, create promotional codes that may be redeemed for Account credit, or other features or benefits related to the Services, subject to any additional terms that Pepal establishes on a per promotional code basis (“Promo Codes”). You agree that Promo Codes:</string>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="i." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2V-Vq-P4z">
+                                                            <rect key="frame" x="18" y="2745" width="8.5" height="19.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPV-IG-FmZ">
+                                                            <rect key="frame" x="34.5" y="2868" width="267.5" height="210.5"/>
+                                                            <string key="text">neither the User Content nor your submission, uploading, publishing or otherwise making available of such User Content nor Pepal’s use of the User Content as permitted herein will infringe, misappropriate or violate a third party’s intellectual property or proprietary rights, or rights of publicity or privacy, or result in the violation of any applicable law or regulation.</string>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="ii." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6K9-ak-CG7">
+                                                            <rect key="frame" x="18" y="2868" width="12" height="19.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSx-9j-J4d">
+                                                            <rect key="frame" x="18" y="3086.5" width="284" height="229.5"/>
+                                                            <string key="text">You agree to not provide User Content that is defamatory, libelous, hateful, violent, obscene, pornographic, unlawful, or otherwise offensive, as determined by Pepal in its sole discretion, whether or not such material may be protected by law. Pepal may, but shall not be obligated to, review, monitor, or remove User Content, at Pepal’s sole discretion and at any time and for any reason, without notice to you.</string>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Network Access and Devices" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9e-rW-QSE">
+                                                            <rect key="frame" x="18" y="3324" width="284" height="19.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIU-6J-Y0s">
+                                                            <rect key="frame" x="18" y="3351.5" width="284" height="382"/>
+                                                            <mutableString key="text">You are responsible for obtaining the data network access necessary to use the Services. Your mobile network’s data and messaging rates and fees may apply if you access or use the Services from a wireless-enabled device and you shall be responsible for such rates and fees. You are responsible for acquiring and updating compatible hardware or devices necessary to access and use the Services and Applications and any updates thereto. Pepal does not guarantee that the Services, or any portion thereof, will function on any particular hardware or devices. In addition, the Services may be subject to malfunctions and delays inherent in the use of the Internet and electronic communications.</mutableString>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="tXv-Sm-f9S" firstAttribute="top" secondItem="BB4-ZI-vDz" secondAttribute="top" id="1N8-oS-9eS"/>
+                                                        <constraint firstItem="dAI-Wg-1Cx" firstAttribute="leading" secondItem="o7W-Oc-IbH" secondAttribute="leading" id="343-hj-OVa"/>
+                                                        <constraint firstItem="f4b-L7-8wY" firstAttribute="leading" secondItem="Fwy-gZ-QWr" secondAttribute="leading" id="3E5-mV-3kg"/>
+                                                        <constraint firstItem="v2V-Vq-P4z" firstAttribute="leading" secondItem="gBK-lv-0oU" secondAttribute="leading" id="3TM-bX-tMm"/>
+                                                        <constraint firstItem="WCq-ES-mtn" firstAttribute="leading" secondItem="h0e-Dg-MMo" secondAttribute="leading" id="3tN-Z9-V7i"/>
+                                                        <constraint firstItem="WWE-JH-OOB" firstAttribute="top" secondItem="3mm-bT-qTc" secondAttribute="bottom" constant="8" id="4jv-dr-uAz"/>
+                                                        <constraint firstItem="Z15-cM-oN1" firstAttribute="trailing" secondItem="f4b-L7-8wY" secondAttribute="trailing" id="5w6-L5-XnU"/>
+                                                        <constraint firstItem="Z15-cM-oN1" firstAttribute="top" secondItem="f4b-L7-8wY" secondAttribute="bottom" constant="8" id="75v-ri-7Nd"/>
+                                                        <constraint firstItem="f4b-L7-8wY" firstAttribute="top" secondItem="Fwy-gZ-QWr" secondAttribute="bottom" constant="16" id="7do-mv-GEZ"/>
+                                                        <constraint firstItem="2Pm-gx-cWl" firstAttribute="top" secondItem="3r3-5W-PFt" secondAttribute="bottom" constant="8" id="7nP-nb-uLB"/>
+                                                        <constraint firstItem="K9e-rW-QSE" firstAttribute="top" secondItem="aSx-9j-J4d" secondAttribute="bottom" constant="8" id="84z-o5-Xqo"/>
+                                                        <constraint firstItem="3Ef-92-3M6" firstAttribute="leading" secondItem="nyG-1S-rCb" secondAttribute="leading" id="8ej-KR-Kg9"/>
+                                                        <constraint firstItem="5Te-fE-Lai" firstAttribute="trailing" secondItem="BB4-ZI-vDz" secondAttribute="trailing" id="8m1-gr-xdw"/>
+                                                        <constraint firstItem="hWC-V5-Qrk" firstAttribute="top" secondItem="WWE-JH-OOB" secondAttribute="bottom" constant="8" id="BCK-1w-9Nm"/>
+                                                        <constraint firstItem="3mm-bT-qTc" firstAttribute="trailing" secondItem="WXf-Px-XWP" secondAttribute="trailing" id="Bfn-41-7Yn"/>
+                                                        <constraint firstItem="Nqd-qv-6jg" firstAttribute="leading" secondItem="WCq-ES-mtn" secondAttribute="leading" id="Bl4-Nt-kIr"/>
+                                                        <constraint firstItem="2Pm-gx-cWl" firstAttribute="trailing" secondItem="3r3-5W-PFt" secondAttribute="trailing" id="CwY-dR-SpN"/>
+                                                        <constraint firstItem="CDT-YB-P4s" firstAttribute="top" secondItem="5Te-fE-Lai" secondAttribute="bottom" constant="8" id="DRG-x4-vOC"/>
+                                                        <constraint firstItem="3r3-5W-PFt" firstAttribute="leading" secondItem="Z15-cM-oN1" secondAttribute="leading" id="FU0-pu-Nye"/>
+                                                        <constraint firstItem="2Pm-gx-cWl" firstAttribute="leading" secondItem="3r3-5W-PFt" secondAttribute="leading" id="GKz-xo-Whc"/>
+                                                        <constraint firstItem="o7W-Oc-IbH" firstAttribute="leading" secondItem="h0e-Dg-MMo" secondAttribute="trailing" constant="8" id="GiM-Ek-Gcu"/>
+                                                        <constraint firstItem="tXv-Sm-f9S" firstAttribute="leading" secondItem="Wfb-eG-PWb" secondAttribute="leading" id="Jej-Lk-zvY"/>
+                                                        <constraint firstItem="h0e-Dg-MMo" firstAttribute="leading" secondItem="WWE-JH-OOB" secondAttribute="leading" id="Kae-Em-9rL"/>
+                                                        <constraint firstItem="Z15-cM-oN1" firstAttribute="leading" secondItem="f4b-L7-8wY" secondAttribute="leading" id="LZj-Ma-50f"/>
+                                                        <constraint firstItem="3Ef-92-3M6" firstAttribute="trailing" secondItem="nyG-1S-rCb" secondAttribute="trailing" id="M4r-GW-PtE"/>
+                                                        <constraint firstItem="gBK-lv-0oU" firstAttribute="leading" secondItem="tXv-Sm-f9S" secondAttribute="leading" id="MTX-og-kNh"/>
+                                                        <constraint firstItem="WWE-JH-OOB" firstAttribute="leading" secondItem="3mm-bT-qTc" secondAttribute="leading" id="Mdj-n7-Mou"/>
+                                                        <constraint firstItem="WWE-JH-OOB" firstAttribute="trailing" secondItem="3mm-bT-qTc" secondAttribute="trailing" id="MnL-qN-KbE"/>
+                                                        <constraint firstItem="WXf-Px-XWP" firstAttribute="leading" secondItem="2Pm-gx-cWl" secondAttribute="leading" id="MqE-BN-i7m"/>
+                                                        <constraint firstItem="K9e-rW-QSE" firstAttribute="leading" secondItem="aSx-9j-J4d" secondAttribute="leading" id="NOC-bI-Jnl"/>
+                                                        <constraint firstItem="o7W-Oc-IbH" firstAttribute="trailing" secondItem="WWE-JH-OOB" secondAttribute="trailing" id="NZI-xs-DXn"/>
+                                                        <constraint firstItem="aSx-9j-J4d" firstAttribute="trailing" secondItem="nyG-1S-rCb" secondAttribute="trailing" id="P6J-vj-uOn"/>
+                                                        <constraint firstItem="Nqd-qv-6jg" firstAttribute="top" secondItem="k7z-xt-1ox" secondAttribute="top" id="PfZ-EZ-cr8"/>
+                                                        <constraint firstItem="f4b-L7-8wY" firstAttribute="trailing" secondItem="Fwy-gZ-QWr" secondAttribute="trailing" id="Q3q-ej-cvM"/>
+                                                        <constraint firstItem="o7W-Oc-IbH" firstAttribute="top" secondItem="hWC-V5-Qrk" secondAttribute="bottom" constant="8" id="Q6C-79-mS6"/>
+                                                        <constraint firstItem="hWC-V5-Qrk" firstAttribute="leading" secondItem="WWE-JH-OOB" secondAttribute="leading" id="QwW-EM-l1O"/>
+                                                        <constraint firstItem="6K9-ak-CG7" firstAttribute="top" secondItem="vPV-IG-FmZ" secondAttribute="top" id="RCX-BS-h5v"/>
+                                                        <constraint firstItem="gIU-6J-Y0s" firstAttribute="top" secondItem="K9e-rW-QSE" secondAttribute="bottom" constant="8" id="SMH-de-JjU"/>
+                                                        <constraint firstItem="BB4-ZI-vDz" firstAttribute="top" secondItem="r5b-5x-yl3" secondAttribute="bottom" constant="8" id="Sgr-NO-AIn"/>
+                                                        <constraint firstItem="WXf-Px-XWP" firstAttribute="top" secondItem="2Pm-gx-cWl" secondAttribute="bottom" constant="8" id="TtC-fN-h3D"/>
+                                                        <constraint firstItem="3r3-5W-PFt" firstAttribute="trailing" secondItem="Z15-cM-oN1" secondAttribute="trailing" id="W8f-Pl-v1p"/>
+                                                        <constraint firstItem="5Te-fE-Lai" firstAttribute="leading" secondItem="BB4-ZI-vDz" secondAttribute="leading" id="a0Z-fI-8gc"/>
+                                                        <constraint firstItem="3mm-bT-qTc" firstAttribute="top" secondItem="WXf-Px-XWP" secondAttribute="bottom" constant="8" id="ad7-sO-O2l"/>
+                                                        <constraint firstItem="vPV-IG-FmZ" firstAttribute="leading" secondItem="mCf-2z-naT" secondAttribute="leading" id="cl6-S4-zyB"/>
+                                                        <constraint firstItem="vXP-lp-4ba" firstAttribute="trailing" secondItem="CDT-YB-P4s" secondAttribute="trailing" id="dNa-CJ-n2t"/>
+                                                        <constraint firstItem="nyG-1S-rCb" firstAttribute="trailing" secondItem="vXP-lp-4ba" secondAttribute="trailing" id="eVC-Ws-XX1"/>
+                                                        <constraint firstItem="nyG-1S-rCb" firstAttribute="leading" secondItem="vXP-lp-4ba" secondAttribute="leading" id="eoN-4E-JgQ"/>
+                                                        <constraint firstItem="gIU-6J-Y0s" firstAttribute="leading" secondItem="K9e-rW-QSE" secondAttribute="leading" id="f1F-nN-yq8"/>
+                                                        <constraint firstItem="k7z-xt-1ox" firstAttribute="trailing" secondItem="dAI-Wg-1Cx" secondAttribute="trailing" id="f4v-Dk-YSA"/>
+                                                        <constraint firstItem="vPV-IG-FmZ" firstAttribute="trailing" secondItem="mCf-2z-naT" secondAttribute="trailing" id="f9I-eZ-bNQ"/>
+                                                        <constraint firstItem="r5b-5x-yl3" firstAttribute="trailing" secondItem="k7z-xt-1ox" secondAttribute="trailing" id="fGo-AB-Yuh"/>
+                                                        <constraint firstItem="3r3-5W-PFt" firstAttribute="top" secondItem="Z15-cM-oN1" secondAttribute="bottom" constant="8" id="fQS-Ry-t2i"/>
+                                                        <constraint firstItem="r5b-5x-yl3" firstAttribute="leading" secondItem="k7z-xt-1ox" secondAttribute="leading" id="faQ-ef-w60"/>
+                                                        <constraint firstItem="CDT-YB-P4s" firstAttribute="trailing" secondItem="hWC-V5-Qrk" secondAttribute="trailing" id="h00-w5-cMn"/>
+                                                        <constraint firstItem="r5b-5x-yl3" firstAttribute="top" secondItem="k7z-xt-1ox" secondAttribute="bottom" constant="8" id="hg8-mQ-USj"/>
+                                                        <constraint firstItem="Wfb-eG-PWb" firstAttribute="top" secondItem="r5b-5x-yl3" secondAttribute="top" id="hgU-T1-3B2"/>
+                                                        <constraint firstItem="BB4-ZI-vDz" firstAttribute="leading" secondItem="r5b-5x-yl3" secondAttribute="leading" id="hwG-hv-vdt"/>
+                                                        <constraint firstItem="gIU-6J-Y0s" firstAttribute="trailing" secondItem="K9e-rW-QSE" secondAttribute="trailing" id="hzU-0z-70S"/>
+                                                        <constraint firstItem="mCf-2z-naT" firstAttribute="leading" secondItem="5Te-fE-Lai" secondAttribute="leading" id="jk4-6J-Fk0"/>
+                                                        <constraint firstItem="Fwy-gZ-QWr" firstAttribute="top" secondItem="hAe-se-gZF" secondAttribute="top" constant="1" id="jph-s1-14N"/>
+                                                        <constraint firstItem="vXP-lp-4ba" firstAttribute="leading" secondItem="CDT-YB-P4s" secondAttribute="leading" id="ksv-J8-1vw"/>
+                                                        <constraint firstItem="vXP-lp-4ba" firstAttribute="top" secondItem="CDT-YB-P4s" secondAttribute="bottom" constant="8" id="lIU-Lf-xdC"/>
+                                                        <constraint firstItem="WXf-Px-XWP" firstAttribute="trailing" secondItem="2Pm-gx-cWl" secondAttribute="trailing" id="lzb-OE-b0N"/>
+                                                        <constraint firstItem="k7z-xt-1ox" firstAttribute="top" secondItem="dAI-Wg-1Cx" secondAttribute="bottom" constant="8" id="mCz-qG-NLL"/>
+                                                        <constraint firstItem="3Ef-92-3M6" firstAttribute="top" secondItem="nyG-1S-rCb" secondAttribute="bottom" constant="8" id="mdY-cd-cqd"/>
+                                                        <constraint firstItem="aSx-9j-J4d" firstAttribute="leading" secondItem="nyG-1S-rCb" secondAttribute="leading" id="nsw-mA-TdX"/>
+                                                        <constraint firstItem="gBK-lv-0oU" firstAttribute="top" secondItem="5Te-fE-Lai" secondAttribute="top" id="opq-6l-5HR"/>
+                                                        <constraint firstItem="WCq-ES-mtn" firstAttribute="top" secondItem="dAI-Wg-1Cx" secondAttribute="top" id="qhK-mF-0cI"/>
+                                                        <constraint firstItem="h0e-Dg-MMo" firstAttribute="top" secondItem="o7W-Oc-IbH" secondAttribute="top" id="ro1-NL-cNb"/>
+                                                        <constraint firstItem="Fwy-gZ-QWr" firstAttribute="leading" secondItem="hAe-se-gZF" secondAttribute="leading" constant="18" id="sPf-yk-7FY"/>
+                                                        <constraint firstItem="K9e-rW-QSE" firstAttribute="trailing" secondItem="aSx-9j-J4d" secondAttribute="trailing" id="sgl-Ht-llS"/>
+                                                        <constraint firstItem="CDT-YB-P4s" firstAttribute="leading" secondItem="hWC-V5-Qrk" secondAttribute="leading" id="stH-7Y-tsg"/>
+                                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="gIU-6J-Y0s" secondAttribute="bottom" constant="16.5" id="stk-6R-6gd"/>
+                                                        <constraint firstItem="mCf-2z-naT" firstAttribute="top" secondItem="3Ef-92-3M6" secondAttribute="bottom" constant="8" id="szh-0N-sPM"/>
+                                                        <constraint firstItem="6K9-ak-CG7" firstAttribute="leading" secondItem="v2V-Vq-P4z" secondAttribute="leading" id="t0G-o2-7xn"/>
+                                                        <constraint firstItem="dAI-Wg-1Cx" firstAttribute="trailing" secondItem="o7W-Oc-IbH" secondAttribute="trailing" id="tPr-AN-pec"/>
+                                                        <constraint firstItem="Wfb-eG-PWb" firstAttribute="leading" secondItem="Nqd-qv-6jg" secondAttribute="leading" id="tRP-0s-7aR"/>
+                                                        <constraint firstItem="hWC-V5-Qrk" firstAttribute="trailing" secondItem="WWE-JH-OOB" secondAttribute="trailing" id="uoA-0X-yAH"/>
+                                                        <constraint firstItem="3mm-bT-qTc" firstAttribute="leading" secondItem="WXf-Px-XWP" secondAttribute="leading" id="v4b-mw-fSi"/>
+                                                        <constraint firstItem="vPV-IG-FmZ" firstAttribute="top" secondItem="mCf-2z-naT" secondAttribute="bottom" constant="8" id="vBb-dG-fmD"/>
+                                                        <constraint firstItem="v2V-Vq-P4z" firstAttribute="top" secondItem="mCf-2z-naT" secondAttribute="top" id="vXo-TS-hnt"/>
+                                                        <constraint firstItem="aSx-9j-J4d" firstAttribute="top" secondItem="vPV-IG-FmZ" secondAttribute="bottom" constant="8" id="wiq-Qv-xM1"/>
+                                                        <constraint firstItem="nyG-1S-rCb" firstAttribute="top" secondItem="vXP-lp-4ba" secondAttribute="bottom" constant="8" id="xEk-k1-Ppf"/>
+                                                        <constraint firstItem="dAI-Wg-1Cx" firstAttribute="top" secondItem="o7W-Oc-IbH" secondAttribute="bottom" constant="8" id="yKK-q7-3uk"/>
+                                                        <constraint firstItem="BB4-ZI-vDz" firstAttribute="trailing" secondItem="r5b-5x-yl3" secondAttribute="trailing" id="z7Q-Eo-t26"/>
+                                                        <constraint firstItem="mCf-2z-naT" firstAttribute="trailing" secondItem="3Ef-92-3M6" secondAttribute="trailing" id="zAW-Md-S8h"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Fwy-gZ-QWr" secondAttribute="trailing" constant="18" id="zHQ-Ze-ebe"/>
+                                                        <constraint firstItem="k7z-xt-1ox" firstAttribute="leading" secondItem="dAI-Wg-1Cx" secondAttribute="leading" id="zWY-tS-Z45"/>
+                                                        <constraint firstItem="5Te-fE-Lai" firstAttribute="top" secondItem="BB4-ZI-vDz" secondAttribute="bottom" constant="8" id="zXI-3y-gso"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hAe-se-gZF" firstAttribute="leading" secondItem="Iux-tm-zHh" secondAttribute="leading" id="3D1-lN-t7n"/>
+                                                <constraint firstAttribute="trailing" secondItem="hAe-se-gZF" secondAttribute="trailing" id="Jl0-2B-YE5"/>
+                                                <constraint firstAttribute="bottom" secondItem="hAe-se-gZF" secondAttribute="bottom" id="Ppu-bw-EzM"/>
+                                                <constraint firstItem="hAe-se-gZF" firstAttribute="top" secondItem="Iux-tm-zHh" secondAttribute="top" id="Z6Y-um-Vaz"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="7Qm-Xj-f2T" id="ekp-eO-XHY"/>
+                                    <outlet property="delegate" destination="7Qm-Xj-f2T" id="dWN-7H-H3j"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jSb-Uo-SOF" firstAttribute="bottom" secondItem="BMv-Ke-13V" secondAttribute="bottom" id="9pg-jM-NPl"/>
+                            <constraint firstItem="BMv-Ke-13V" firstAttribute="leading" secondItem="jSb-Uo-SOF" secondAttribute="leading" id="BsL-ZH-jyI"/>
+                            <constraint firstItem="jSb-Uo-SOF" firstAttribute="trailing" secondItem="BMv-Ke-13V" secondAttribute="trailing" id="PFw-bW-sYF"/>
+                            <constraint firstItem="BMv-Ke-13V" firstAttribute="top" secondItem="jSb-Uo-SOF" secondAttribute="top" id="uSk-cE-K65"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jSb-Uo-SOF"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Terms &amp; Conditions" id="FUn-oa-k2R"/>
+                    <connections>
+                        <outlet property="tableViewTerms" destination="BMv-Ke-13V" id="10C-MI-faX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q1r-XU-Kw6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19269.375" y="1179.9295774647887"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="appSelected">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
